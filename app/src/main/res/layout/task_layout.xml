@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="60dp">
+
+    <TextView
+        android:id="@+id/taskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="50sp"
+        android:textColor="@color/editTextColor" />
+    <!-- Divider line -->
+    <View style="@style/divider"
+        android:id="@+id/divider"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"/>
+    <TextView
+        android:id="@+id/taskTime"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/editTextColor"
+       />
+
+
+
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:orientation="horizontal"
+        android:padding="20dp"
+
+
+        >
+
+        <TextView
+            android:id="@id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/editTextColor"
+            android:textSize="30sp"
+            />
+        <!-- Empty View allows text and image to be aligned at either side of the layout -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/deleteTaskBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/delete_icon"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>
